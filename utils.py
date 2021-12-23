@@ -12,7 +12,4 @@ def pprint(msg, A):
 
 
 def npr(array):
-    return np.array(array)
-
-
-print(__name__)
+    return np.array(array, dtype=np.float32)
