@@ -1,7 +1,4 @@
 import sys
-
-from numpy.core.getlimits import _register_type
-from numpy.linalg.linalg import det
 sys.path.append('..')
 from utils import pprint
 import numpy as np
