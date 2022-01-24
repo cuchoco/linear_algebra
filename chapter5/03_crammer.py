@@ -3,7 +3,6 @@ sys.path.append('..')
 from utils import pprint
 import numpy as np
 
-import numpy as np
 
 def solveByCrammer(A, B):   # 크래머 공식을 이용한 Ax = B의 풀이
     x = np.zeros(len(B))
@@ -13,7 +12,7 @@ def solveByCrammer(A, B):   # 크래머 공식을 이용한 Ax = B의 풀이
             C[j, i] = B[j]
             if i > 0:
                 C[j, i-1] = A[j, i-1]
-        # pprint(f'C{i}', C)
+        pprint(f'C{i}', C)
         x[i] = np.linalg.det(C) / np.linalg.det(A)
     return x
 
